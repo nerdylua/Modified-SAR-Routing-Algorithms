@@ -1196,9 +1196,17 @@ function BellmanFordSimulatorFlow() {
                     const distanceIncrease = ((sarTotalDistance - classicTotalDistance) / classicTotalDistance) * 100;
                     
                     if (riskReduction > 10) {
-                      return `🎯 SAR provides significant security improvement (${riskReduction.toFixed(1)}% risk reduction) with ${distanceIncrease.toFixed(1)}% distance trade-off. Recommended for security-critical networks.`;
+                      return (
+                        <>
+                          🎯 SAR provides significant security improvement (<strong>{riskReduction.toFixed(1)}%</strong> risk reduction) with <strong>{distanceIncrease.toFixed(1)}%</strong> distance trade-off. Recommended for security-critical networks.
+                        </>
+                      );
                     } else if (riskReduction > 0) {
-                      return `⚖️ SAR offers moderate security improvement (${riskReduction.toFixed(1)}% risk reduction) with ${distanceIncrease.toFixed(1)}% distance cost. Consider based on security requirements.`;
+                      return (
+                        <>
+                          ⚖️ SAR offers moderate security improvement (<strong>{riskReduction.toFixed(1)}%</strong> risk reduction) with <strong>{distanceIncrease.toFixed(1)}%</strong> distance cost. Consider based on security requirements.
+                        </>
+                      );
                     } else {
                       return `⚠️ SAR shows minimal security benefit in this topology. Classic Bellman-Ford may be sufficient for performance-focused scenarios.`;
                     }
