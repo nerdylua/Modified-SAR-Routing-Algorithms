@@ -38,7 +38,7 @@ export function Hero() {
         className="mt-10 text-center"
       >
         <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-          Real-Time <span className="bg-gradient-to-r from-[#38bdf8] via-[#2dd4bf] to-[#0070F3] bg-clip-text text-transparent">Security-Aware Routing</span> and <span className="bg-gradient-to-r from-[#7928CA] via-[#FF0080] to-[#7928CA] bg-clip-text text-transparent">Intrusion Detection</span> with Network Traffic Visualization
+          Real-Time <span className="bg-gradient-to-r from-[#38bdf8] via-[#2dd4bf] to-[#0070F3] bg-clip-text text-transparent">Security-Aware Routing</span> with <span className="bg-gradient-to-r from-[#7928CA] via-[#FF0080] to-[#7928CA] bg-clip-text text-transparent">Network Traffic</span> Visualization
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-muted-foreground sm:mt-8">
           This research project presents a comprehensive framework integrating dynamic security-aware routing (SAR-Dijkstra) and an interactive network traffic visualization dashboard. The system aims to enhance network security through proactive threat identification and optimized data routing based on real-time security assessments.
